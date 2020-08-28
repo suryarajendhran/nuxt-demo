@@ -13,6 +13,7 @@ import Place from "~/components/Place.vue";
 export default {
   data() {
     return {
+      show: false,
       locations: [
         {
           name: "moscow",
@@ -44,9 +45,18 @@ export default {
 </script>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
 body {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   font-family: "NTR", sans-serif;
   background: #eee;
   line-height: 1.15;
