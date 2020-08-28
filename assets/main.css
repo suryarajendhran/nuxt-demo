@@ -1,0 +1,9 @@
+body {
+  opacity: 1;
+  transition: all 1s;
+  transform-origin: center;
+}
+.hidden {
+  opacity: 0;
+  transform: scale(1.5);
+}

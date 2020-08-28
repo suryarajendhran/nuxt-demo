@@ -10,5 +10,10 @@
 export default {
   name: "place",
   props: ["location"],
+  transition: {
+    beforeEnter: function () {
+      console.log("Before Enter triggered!");
+    },
+  },
 };
 </script>

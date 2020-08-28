@@ -3,7 +3,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: "my-nuxt-project",
+    title: "Surya's Nuxt Demo",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -11,8 +11,13 @@ module.exports = {
     ],
     link: [
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=NTR" }
-    ]
+    ],
+    bodyAttrs: {
+      class: "hidden"
+    }
   },
+  css: ["~/assets/main.css"],
+  plugins: [{ ssr: false, src: "~plugins/appear" }],
   /*
    ** Customize the progress bar color
    */
