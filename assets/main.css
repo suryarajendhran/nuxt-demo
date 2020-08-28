@@ -1,6 +1,6 @@
 body {
   opacity: 1;
-  transition: all 0.3s;
+  transition: opacity 0.5s;
 }
 .hidden {
   opacity: 0;
